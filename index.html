@@ -573,6 +573,7 @@
       .nav-links { gap: 1rem; }
       .about-grid { grid-template-columns: 1fr; }
       .takayama-card { grid-template-columns: 1fr; }
+      .reveal[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -597,8 +598,9 @@
       <div class="hero-tag">Software Engineer &amp; Management Consultant</div>
       <h1><span>藤村英樹</span></h1>
       <p class="hero-desc">
-        30年以上のソフトウェア開発とプロジェクトマネジメントの経験を持ち、<br>
-        生成AI・ノーコードを活用した業務自動化で中小企業の課題を解決します。
+        30年以上の開発・PM経験と中小企業診断士の知見をもとに、<br>
+        技術格差が生まれやすい中小企業・地方地域へ<br>
+        テクノロジーの力を届け、社会に貢献します。
       </p>
       <div class="hero-btns">
         <a href="#career" class="btn btn-primary">経歴を見る</a>
@@ -621,7 +623,7 @@
             2017年に中小企業診断士を取得し副業を開始。2024年には個人事業「シーディーワークス」を開業。生成AI（Claude Code）、n8n、GASを活用した業務自動化支援を中小企業・個人事業主に提供しています。
           </p>
           <p>
-            技術力 × 経営視点 × コンサルティング力で、お客様に寄り添った実践的な課題解決を得意としています。
+            これまでの仕事経験で得た経験・知見をベースに、技術格差が生まれやすい中小企業や地方の地域に対してテクノロジーの力を届け、社会に貢献します。
           </p>
           <div class="stat-row">
             <div class="stat-card">
@@ -663,6 +665,18 @@
               <span>fujimura.hideki@cd-works.jp</span>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Purpose & Mission -->
+      <div class="reveal" style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+        <div style="background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(6,182,212,0.06)); border: 1.5px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 1.4rem;">
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 0.6rem;">MY PURPOSE</div>
+          <p style="font-size: 0.95rem; font-weight: 700; color: var(--text); line-height: 1.65;">技術と地域の架け橋を果たし、誰もがその恩恵を受けられる社会へ</p>
+        </div>
+        <div style="background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(245,158,11,0.06)); border: 1.5px solid rgba(6,182,212,0.25); border-radius: 12px; padding: 1.4rem;">
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; color: var(--accent2); margin-bottom: 0.6rem;">MY MISSION</div>
+          <p style="font-size: 0.95rem; font-weight: 700; color: var(--text); line-height: 1.65;">技術をもっと身近に。中小企業・地域・個人のAI活用を現場支援する。</p>
         </div>
       </div>
     </div>
@@ -855,7 +869,8 @@
       <p class="section-label reveal">Lifework</p>
       <h2 class="reveal">ライフワーク</h2>
       <p class="contrib-intro reveal">
-        仕事で培った技術力・経営視点を、地域や社会への貢献に活かす活動を続けています。
+        「技術と地域の架け橋を果たし、誰もがその恩恵を受けられる社会へ」を自らのパーパスとし、
+        これまでの仕事経験で培った技術力・経営視点を地域や社会への貢献に活かす活動を続けています。
         大阪を拠点に、リモートで全国の地域と繋がりながら行動します。
       </p>
 
@@ -902,10 +917,19 @@
         </div>
       </div>
 
-      <!-- Mission -->
+      <!-- Purpose & Mission Banner -->
       <div class="mission-banner reveal">
-        <div class="mission-label">MISSION</div>
-        <div class="mission-text">「誰も技術に取り残されない社会」を目指して</div>
+        <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; text-align: center;">
+          <div>
+            <div class="mission-label">MY PURPOSE</div>
+            <div class="mission-text" style="font-size: 1rem;">「技術と地域の架け橋を果たし、誰もがその恩恵を受けられる社会へ」</div>
+          </div>
+          <div style="width: 1px; background: rgba(255,255,255,0.3); flex-shrink: 0; display: none;" class="mission-divider"></div>
+          <div>
+            <div class="mission-label">MY MISSION</div>
+            <div class="mission-text" style="font-size: 1rem;">「技術をもっと身近に。中小企業・地域・個人のAI活用を現場支援する。」</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
